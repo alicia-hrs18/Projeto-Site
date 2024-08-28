@@ -22,13 +22,30 @@
     background-position: left;
 }
 
-#interface .cabecalho .logoMenu {
-    display: block;
+#interface .cabecalho .logoMenu { /* TAG NAV */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 3rem;
     background-color: transparent;
 }
 
-#interface .cabecalho .logoMenu a {
-    
+#interface .cabecalho .logoMenu .linkLogo {
+    display: block;
+    width: 100px;
 }
+
+#interface .cabecalho .logoMenu a img {
+    width: 100%;
+}
+
+#interface .cabecalho .logoMenu .menu {
+    display: none;
+    flex-direction: row;
+    list-style: none;
+}
+
+/*#interface .cabecalho .logoMenu .menu li {
+    display: inline-block;
+}*/
